@@ -19,8 +19,8 @@ are ones that arguably could have been included in the base game. The following 
 
 ### Additional Changes
 -Balanced resource growth (TD & RA)  
--Smarter pathfinding (TD & RA)
--Balanced difficulties (TD & RA)
+-Smarter pathfinding (TD & RA)  
+-Balanced difficulties (TD & RA)  
 
 
 
