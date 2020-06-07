@@ -2256,6 +2256,7 @@ bool Read_Scenario_INI(char * fname, bool )
 	Rule.IQ(RuleINI);
 	Rule.Objects(RuleINI);
 	Rule.Difficulty(RuleINI);
+
 #ifdef FIXIT_CSII	//	checked - ajw 9/28/98 - Except does this _change_ any rules, or just add to them? - Just adds.
 	Rule.General(AftermathINI);
 	Rule.Recharge(AftermathINI);

@@ -744,6 +744,8 @@ static UnitTypeClass const UnitPhase(
 	TXT_PHASETRANSPORT,	// NAME:			Text name of this unit type.
 	"STNK",					// NAME:			Text name of this unit type.
 	ANIM_FRAG1,				// EXPLOSION:	Type of explosion when destroyed.
+	9,						//Build level
+	STRUCT_ADVANCED_TECH,	//Prerequisite
 	REMAP_NORMAL,			// Sidebar remap logic.
 	0x0030,					//	Vertical offset.
 	0x0030,					// Primary weapon offset along turret centerline.
