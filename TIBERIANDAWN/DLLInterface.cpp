@@ -4358,6 +4358,16 @@ void DLLExportClass::Calculate_Placement_Distances(BuildingTypeClass* placement_
 					if (Map.In_Radar(adjcell)) {
 						placement_distance[adjcell] = min(placement_distance[adjcell], 1U);
 					}
+
+					//[One-Cell Gap] FluffyQuack: Repeat of above to let building placements be allowed by one extra tile
+					{
+						for (FacingType newfacing = FACING_N; newfacing < FACING_COUNT; newfacing++) {
+							CELL newadjcell = Adjacent_Cell(adjcell, newfacing);
+							if (Map.In_Radar(newadjcell)) {
+								placement_distance[newadjcell] = min(placement_distance[newadjcell], 1U);
+							}
+						}
+					}
 				}
 			}
 		}

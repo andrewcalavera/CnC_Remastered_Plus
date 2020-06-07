@@ -836,6 +836,19 @@ bool DisplayClass::Passes_Proximity_Check(ObjectTypeClass const *object)
 			if (base && base->What_Am_I() == RTTI_BUILDING && base->House->Class->House == PendingHouse) {
 				return(true);
 			}
+
+			//[One-Cell Gap] FluffyQuack: Repeat the above loop so we check one cell further away
+			for (FacingType newfacing = FACING_N; newfacing < FACING_COUNT; newfacing++) {
+				CELL	newercell = Adjacent_Cell(newcell, newfacing);
+				if (!In_Radar(newercell)) return(false);
+				base = (*this)[newercell].Cell_Techno();
+				if ((*this)[newercell].Owner == house) {
+					return(true);
+				}
+				if (base && base->What_Am_I() == RTTI_BUILDING && base->House->Class->House == house) {
+					return(true);
+				}
+}
 		}
 	}
 	return(false);
