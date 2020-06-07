@@ -10,12 +10,12 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 are ones that arguably could have been included in the base game. The following is a "wishlist" of features to be added to this All-Inclusive Mod:
 
 ### Existing Mods
--Modern Wall Building (TD & RA) by Sleipnir [ADDED]   
+-Modern Wall Building (TD & RA) by Sleipnir
 -Additional Zoom Levels (TD & RA) by CCHyper  
 -Rename Attack Helicopter to Longbow by CCHyper  
 -Rename Light Scout to Hum-vee by CCHyper  
 -Unlock Helicarrier & Phase Tank by CCHyper  
--One-cell gap for base construction (TD) by FluffyQuack  
+-One-cell gap for base construction (TD) by FluffyQuack  [ADDED]   
 
 ### Additional Changes
 -Balanced resource growth (TD & RA)  
