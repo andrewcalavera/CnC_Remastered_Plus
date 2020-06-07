@@ -1,3 +1,5 @@
+Author: alexlk42
+
 ## Building this source
 
 This source has been updated to be built in Visual Studio 2019. Simply load the project (CnCRemastered.sln) in VS 2019 and build.
