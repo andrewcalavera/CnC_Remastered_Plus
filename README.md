@@ -11,11 +11,11 @@ are ones that arguably could have been included in the base game. The following 
 
 ### Existing Mods
 -Modern Wall Building (TD & RA) by Sleipnir  
--Additional Zoom Levels (TD & RA) by CCHyper  
--Rename Attack Helicopter to Longbow by CCHyper  
--Rename Light Scout to Hum-vee by CCHyper  
--Unlock Helicarrier & Phase Tank by CCHyper  
--One-cell gap for base construction (TD) by FluffyQuack  [ADDED]   
+-Additional Zoom Levels (TD & RA) by CCHyper [ADDED via XML files]  
+-Rename Attack Helicopter to Longbow by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
+-Rename Light Scout to Hum-vee by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
+-Unlock Helicarrier & Phase Tank by CCHyper [ADDED via ini files, optimally want to enable in DLL somehow]  
+-One-cell gap for base construction (TD) by FluffyQuack [ADDED to DLL]  
 
 ### Additional Changes
 -Balanced resource growth (TD & RA)  
