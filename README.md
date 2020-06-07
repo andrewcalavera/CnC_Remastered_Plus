@@ -18,8 +18,8 @@ are ones that arguably could have been included in the base game. The following 
 -One-cell gap for base construction (TD) by FluffyQuack  [ADDED]   
 
 ### Additional Changes
--Balanced resource growth (TD & RA)
--Smarter pathfinding (TD & RA)
+-Balanced resource growth (TD & RA)  
+-Smarter pathfinding (TD & RA)  
 
 
 
