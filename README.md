@@ -7,18 +7,18 @@ you must purchase from Steam or Origin. Once you have purchased the game you can
 ## All Inclusive Mod Goal
 
 This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested features. The changes proposed
-are ones that arguably could have been included in the base game. The following is a "wishlist" of features to be added to this All-Inclusive Mod:
+are ones that arguably could have been included in the base game.
 
-### Existing Mods
--Modern Wall Building (TD & RA) by Sleipnir  
+### Included Mods
+-Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]
 -Additional Zoom Levels (TD & RA) by CCHyper [ADDED via XML files]  
 -Rename Attack Helicopter to Longbow by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
 -Rename Light Scout to Hum-vee by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
 -Unlock Helicarrier & Phase Tank by CCHyper [ADDED via ini files, optimally want to enable in DLL somehow]  
 -One-cell gap for base construction (TD) by FluffyQuack [ADDED to DLL]  
 
-### Additional Changes
--Balanced resource growth (TD & RA) [ADDED, needs testing]  
+### To-Be-Added
+-Modern Wall Building (TD & RA) by Sleipnir/pchote  
 -Smarter pathfinding (TD & RA)  
 -Balanced difficulties (TD & RA)  
 
