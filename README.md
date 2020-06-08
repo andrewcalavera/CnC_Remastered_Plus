@@ -10,7 +10,7 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 are ones that arguably could have been included in the base game.
 
 ### Included Mods
--Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]
+-Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]  
 -Additional Zoom Levels (TD & RA) by CCHyper [ADDED via XML files]  
 -Rename Attack Helicopter to Longbow by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
 -Rename Light Scout to Hum-vee by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
