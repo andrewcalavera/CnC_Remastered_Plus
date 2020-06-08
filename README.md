@@ -22,6 +22,7 @@ notes below) will not be implemented.
 ### To-Be-Added
 -Smarter pathfinding (TD & RA)  
 -Balanced difficulties (TD & RA)  
+-More hotkeys (specifically 'D' to deploy) (TD & RA)  
 
 ##Differences from CFE Patch
 CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake).
