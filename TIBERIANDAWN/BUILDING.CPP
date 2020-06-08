@@ -1297,28 +1297,30 @@ bool BuildingClass::Unlimbo(COORDINATE coord, DirType dir)
 	*/
 	if (Class->IsWall) {
 		if (Can_Enter_Cell(Coord_Cell(coord), FACING_NONE) == MOVE_OK) {
-			OverlayType otype = OVERLAY_NONE;
-			switch (Class->Type) {
-				case STRUCT_SANDBAG_WALL:
-					otype	= OVERLAY_SANDBAG_WALL;
-					break;
-
-				case STRUCT_CYCLONE_WALL:
-					otype = OVERLAY_CYCLONE_WALL;
-					break;
-
-				case STRUCT_BRICK_WALL:
-					otype = OVERLAY_BRICK_WALL;
-					break;
-
-				case STRUCT_BARBWIRE_WALL:
-					otype = OVERLAY_BARBWIRE_WALL;
-					break;
-
-				case STRUCT_WOOD_WALL:
-					otype = OVERLAY_WOOD_WALL;
-					break;
-			}
+		/*
+		** Building to Overlay mapping has been extracted to its own helper method.
+		** pchote - "Modern Wall Building" mod.
+		**
+		OverlayType otype = OVERLAY_NONE;
+		switch (Class->Type) {
+			case STRUCT_SANDBAG_WALL:
+				otype	= OVERLAY_SANDBAG_WALL;
+				break;
+			case STRUCT_CYCLONE_WALL:
+				otype = OVERLAY_CYCLONE_WALL;
+				break;
+			case STRUCT_BRICK_WALL:
+				otype = OVERLAY_BRICK_WALL;
+				break;
+			case STRUCT_BARBWIRE_WALL:
+				otype = OVERLAY_BARBWIRE_WALL;
+				break;
+			case STRUCT_WOOD_WALL:
+				otype = OVERLAY_WOOD_WALL;
+				break;
+		}
+		*/
+			OverlayType otype = Class->Overlay_Type();
 			if (otype != OVERLAY_NONE) {
 				ObjectClass * o = OverlayTypeClass::As_Reference(otype).Create_One_Of(House);
 				if (o && o->Unlimbo(coord)) {
