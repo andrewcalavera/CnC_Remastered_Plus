@@ -28,5 +28,7 @@ notes below) will not be implemented.
 CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake).
 Features such as Rally Points, Repair With No Cash, and A-Star Pathfinding will not be merged into this mod.
 
+CFE Patch is welcome to use any features existing in this mod (either because I didn't design them myself or because permission is granted).
+
 
 
