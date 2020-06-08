@@ -4,11 +4,11 @@ This code is the game logic for Command and Conquer: Tiberian Dawn, and Command 
 EA did not open source any assets beyond this source and only this source is under GPLv3. In order to obtain the rest of the game 
 you must purchase from Steam or Origin. Once you have purchased the game you can play it and mod it to your heart's content.
 
-## All Inclusive Mod Goal
+## C&C Remastered+ Goal
 
-This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested QOL features. The changes proposed are ones that arguably could have been included in the base game. 
+This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested QOL features. The changes made are ones that arguably could have been included in the base game. 
 
-**Note: Since the base game is a remaster, not a remake, more modern features (see CFE Patch notes below) will not be implemented.
+**Note: Since the base game is a remaster, not a remake, more modern features (see 'Differences From CFE Patch' below) will not be implemented.
 
 ### Included Mods
 -Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]  
