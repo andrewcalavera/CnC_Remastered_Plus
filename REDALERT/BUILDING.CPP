@@ -1115,6 +1115,7 @@ bool BuildingClass::Unlimbo(COORDINATE coord, DirType dir)
 
 			}
 			*/
+			OverlayType otype = Class->Overlay_Type();
 			if (otype != OVERLAY_NONE) {
 				ObjectClass * o = OverlayTypeClass::As_Reference(otype).Create_One_Of(House);
 				if (o && o->Unlimbo(coord)) {
