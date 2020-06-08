@@ -6,9 +6,7 @@ you must purchase from Steam or Origin. Once you have purchased the game you can
 
 ## All Inclusive Mod Goal
 
-This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested features. The changes proposed
-are ones that arguably could have been included in the base game. Note: Since the base game is a remaster, not a remake, more modern features (see CFE Patch
-notes below) will not be implemented.
+This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested QOL features. The changes proposed are ones that arguably could have been included in the base game. Note: Since the base game is a remaster, not a remake, more modern features (see CFE Patch notes below) will not be implemented.
 
 ### Included Mods
 -Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]  
@@ -25,8 +23,7 @@ notes below) will not be implemented.
 -More hotkeys (specifically 'D' to deploy) (TD & RA)  
 
 ## Differences from CFE Patch
-CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake).
-Features such as Rally Points, Repair With No Cash, and A-Star Pathfinding will not be merged into this mod.
+CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake). Features such as Rally Points, Repair With No Cash, and A-Star Pathfinding will not be merged into this mod.
 
 CFE Patch is welcome to use any features existing in this mod (either because I didn't design them myself or because permission is granted).
 
