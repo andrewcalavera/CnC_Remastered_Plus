@@ -21,6 +21,7 @@ are ones that arguably could have been included in the base game.
 ### To-Be-Added
 -Smarter pathfinding (TD & RA)  
 -Balanced difficulties (TD & RA)  
+-More hotkeys (specifically 'D' to deploy) (TD & RA)  
 
 
 
