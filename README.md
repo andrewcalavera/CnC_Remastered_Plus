@@ -20,11 +20,11 @@ notes below) will not be implemented.
 -Modern Wall Building (TD & RA) by Sleipnir/pchote [ADDED to DLL]  
 
 ### To-Be-Added
--Smarter pathfinding (TD & RA)  
+-Smarter harvesting (TD & RA)  
 -Balanced difficulties (TD & RA)  
 -More hotkeys (specifically 'D' to deploy) (TD & RA)  
 
-##Differences from CFE Patch
+## Differences from CFE Patch
 CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake).
 Features such as Rally Points, Repair With No Cash, and A-Star Pathfinding will not be merged into this mod.
 
