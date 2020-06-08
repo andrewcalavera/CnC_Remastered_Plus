@@ -17,7 +17,7 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 -Rename Light Scout to Hum-vee by CCHyper [ADDED via csv files, optimally want to enable in DLL somehow]  
 -Unlock Helicarrier & Phase Tank by CCHyper [ADDED via ini files, optimally want to enable in DLL somehow]  
 -One-cell gap for base construction (TD) by FluffyQuack [ADDED to DLL]  
--Modern Wall Building (TD & RA) by Sleipnir/pchote [ADDED to DLL]  
+-Modern Wall Building (TD & RA) by pchote [ADDED to DLL]  
 
 ### To-Be-Added
 -Smarter harvesting (TD & RA)  
