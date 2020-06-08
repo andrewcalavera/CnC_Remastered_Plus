@@ -8,7 +8,7 @@ you must purchase from Steam or Origin. Once you have purchased the game you can
 
 This mod's goal is to provide an all-inclusive experience via most popular existing mods and commonly requested QOL features. The changes proposed are ones that arguably could have been included in the base game. 
 
-*Note: Since the base game is a remaster, not a remake, more modern features (see CFE Patch notes below) will not be implemented.
+**Note: Since the base game is a remaster, not a remake, more modern features (see CFE Patch notes below) will not be implemented.
 
 ### Included Mods
 -Balanced resource growth (TD & RA)  [ADDED via rules.ini (RA) and Type.h change (TD)]  
