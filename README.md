@@ -1,4 +1,4 @@
-# CnC_Remastered_Collection
+# C&C Remastered Collection
 
 This code is the game logic for Command and Conquer: Tiberian Dawn, and Command and Conquer: Red Alert. 
 EA did not open source any assets beyond this source and only this source is under GPLv3. In order to obtain the rest of the game 
@@ -20,6 +20,7 @@ are ones that arguably could have been included in the base game. The following 
 ### Additional Changes
 -Balanced resource growth (TD & RA)  
 -Smarter pathfinding (TD & RA)  
+-Balanced difficulties (TD & RA)  
 
 
 
