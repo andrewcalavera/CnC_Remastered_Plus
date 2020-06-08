@@ -909,7 +909,8 @@ void MapClass::Logic(void)
 	**	Scan another block of the map in order to accumulate the potential
 	**	Tiberium cells that can grow or spread.
 	*/
-	int subcount = 30;
+	//int subcount = 30;
+	int subcount = 60; //Increase subcount - Jeod
 	int index;
 	for (index = TiberiumScan; index < MAP_CELL_TOTAL; index++) {
 		CELL cell = index;
@@ -929,11 +930,14 @@ void MapClass::Logic(void)
 		*/
 		TerrainClass * terrain = ptr->Cell_Terrain();
 		if (Special.IsTSpread &&
-			(ptr->Land_Type() == LAND_TIBERIUM && ptr->OverlayData > 6) ||
+			//(ptr->Land_Type() == LAND_TIBERIUM && ptr->OverlayData > 6) ||
+			(ptr->Land_Type() == LAND_TIBERIUM && ptr->OverlayData > 3) || //Tiberium is "heavy" growth at stage 3 instead of 6 - Jeod
 			(terrain && terrain->Class->IsTiberiumSpawn)) {
 
-			int tries = 1;
-			if (terrain) tries = 3;
+			//int tries = 1;
+			int tries = 4; //Try twice as much - Jeod
+			//if (terrain) tries = 3;
+			if (terrain) tries = 6; //Try twice as much - Jeod
 			for (int i = 0; i < tries; i++) {
 				if (TiberiumSpreadCount < sizeof(TiberiumSpread)/sizeof(TiberiumSpread[0])) {
 					TiberiumSpread[TiberiumSpreadCount++] = cell;
@@ -948,8 +952,10 @@ void MapClass::Logic(void)
 	TiberiumScan = index;
 
 	if (TiberiumScan >= MAP_CELL_TOTAL) {
-		int tries = 1;
-		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 2;
+		//int tries = 1;
+		int tries = 2; //Scan twice as fast in normal games - Jeod
+		//if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 2;
+		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 4; //Scan twice as fast in skirmish - Jeod
 		TiberiumScan = 0;
 		IsForwardScan = (IsForwardScan == false);
 
@@ -994,7 +1000,8 @@ void MapClass::Logic(void)
 
 								default:
 									found = true;
-									new OverlayClass(Random_Pick(OVERLAY_TIBERIUM1, OVERLAY_TIBERIUM12), newcell->Cell_Number());
+									//new OverlayClass(Random_Pick(OVERLAY_TIBERIUM1, OVERLAY_TIBERIUM12), newcell->Cell_Number());
+									new OverlayClass(Random_Pick(OVERLAY_TIBERIUM2, OVERLAY_TIBERIUM12), newcell->Cell_Number()); //New Tiberium spread starts at stage 2 or 12 - Jeod
 									newcell->OverlayData = 1;
 									break;
 
