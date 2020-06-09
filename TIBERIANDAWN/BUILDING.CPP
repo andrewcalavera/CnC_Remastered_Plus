@@ -213,7 +213,7 @@ RadioMessageType BuildingClass::Receive_Message(RadioClass * from, RadioMessageT
 			else if (Class->Type == STRUCT_REFINERY &&  In_Radio_Contact()) {
 				if (from->What_Am_I() == RTTI_UNIT && *((UnitClass*)from) == UNIT_HARVESTER) {
 						UnitClass & currentHarvy = *static_cast<UnitClass*>(Contact_With_Whom());
-					UnitClass & newHarvy = *static_cast<UnitClass*>(from);
+						UnitClass & newHarvy = *static_cast<UnitClass*>(from);
 						const int currentHarvyDistance = currentHarvy.Distance(this);
 						int HarvyQueueJumpCutoff = 3;
 					if (currentHarvyDistance > HarvyQueueJumpCutoff && newHarvy.Distance(this) < currentHarvyDistance) {
@@ -224,6 +224,7 @@ RadioMessageType BuildingClass::Receive_Message(RadioClass * from, RadioMessageT
 					}
 				}
 			}
+			break;
 
 		case RADIO_CAN_LOAD:
 			TechnoClass::Receive_Message(from, message, param);
