@@ -909,7 +909,21 @@ void MapClass::Logic(void)
 	**	Scan another block of the map in order to accumulate the potential
 	**	Tiberium cells that can grow or spread.
 	*/
-	int subcount = MAP_CELL_TOTAL / (TICKS_PER_MINUTE / 30); //Design a custom GrowthRate rule - Jeod
+
+	/*
+	** Design a custom GrowthRate rule based on difficulty settings - Jeod
+	*/
+	int subcount = 0;
+	if (PlayerPtr->Difficulty == DIFF_EASY) {
+		subcount = MAP_CELL_TOTAL / (TICKS_PER_MINUTE / 20);
+	}
+	else if (PlayerPtr->Difficulty == DIFF_NORMAL) {
+		subcount = MAP_CELL_TOTAL / (TICKS_PER_MINUTE / 15);
+	}
+	else if (PlayerPtr->Difficulty == DIFF_HARD) {
+		subcount = MAP_CELL_TOTAL / (TICKS_PER_MINUTE / 10);
+	}
+	else subcount = 30;
 	subcount = max(subcount, 1);
 	int index;
 	for (index = TiberiumScan; index < MAP_CELL_TOTAL; index++) {
@@ -934,9 +948,9 @@ void MapClass::Logic(void)
 			(terrain && terrain->Class->IsTiberiumSpawn)) {
 
 			//int tries = 1;
-			int tries = 3; //Try a lot - Jeod
+			int tries = 2; //Try some more - Jeod
 			//if (terrain) tries = 3;
-			if (terrain) tries = 6; //Try a lot - Jeod
+			if (terrain) tries = 4; //Try some more - Jeod
 			for (int i = 0; i < tries; i++) {
 				if (TiberiumSpreadCount < sizeof(TiberiumSpread)/sizeof(TiberiumSpread[0])) {
 					TiberiumSpread[TiberiumSpreadCount++] = cell;
@@ -951,8 +965,8 @@ void MapClass::Logic(void)
 	TiberiumScan = index;
 
 	if (TiberiumScan >= MAP_CELL_TOTAL) {
-		int tries = 3; //Try a lot - Jeod
-		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 6; //Try a lot - Jeod
+		int tries = 2; //Try some more - Jeod
+		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 4; //Try some more - Jeod
 		TiberiumScan = 0;
 		IsForwardScan = (IsForwardScan == false);
 
