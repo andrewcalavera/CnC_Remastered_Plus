@@ -20,6 +20,7 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 -Modern Wall Building (TD & RA) by pchote [ADDED to DLL]  
 -Boxing (TD) by JeepRubi and modified by Jeod [ADDED to DLL]  
 -Balanced difficulties (TD) by axeil55 [ADDED via XML file and DLL changes]  
+-Harvester queue jumping (TD) by cfehunter [ADDED to DLL]  
 
 ### To-Be-Added
 -Smarter harvesting (TD & RA) -- This one might be handled by EA   

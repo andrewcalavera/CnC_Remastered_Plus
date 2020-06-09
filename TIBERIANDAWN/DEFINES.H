@@ -1624,6 +1624,7 @@ typedef enum RadioMessageType : unsigned char {
 	RADIO_PREPARED,			// "Are you prepared to fight?"
 	RADIO_ATTACK_THIS,		// "Attack this target please."
 	RADIO_RELOAD,				// "Reload one step please."
+	RADIO_CANCEL,			// "Abort mission. Currently used for Harvesters only."
 
 	// Hand to hand combat messages (yelled rather than radioed).
 	RADIO_KICK,				// "Take this kick, you.. you.."
