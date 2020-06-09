@@ -1202,8 +1202,10 @@
     <ClCompile Include="TURRET.CPP">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DLLInterfaceEditor.cpp" />
     <ClCompile Include="RULES.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLInterfaceEditor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

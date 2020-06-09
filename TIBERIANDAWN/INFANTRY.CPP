@@ -1166,7 +1166,6 @@ void InfantryClass::AI(void)
 				} else {
 
 					if (Is_Target_Infantry(TarCom) && (Distance(TarCom)<=0x80) && (Coord_Y(Coord) == Coord_Y(object->Coord))) {
-
 						// Too close to shoot, so start hand-to-hand combat
 						if (Transmit_Message(RADIO_HELLO, (TechnoClass *)object) == RADIO_ROGER) {
 							if (Transmit_Message(RADIO_PREPARE_TO_BOX) == RADIO_ROGER) {
@@ -1825,10 +1824,10 @@ FireErrorType InfantryClass::Can_Fire(TARGET target, int which) const
 	** If in hand-to-hand, and we're currently playing a got-hit animation,
 	** then we can't punch back yet.
 	*/
-	if (IsBoxing) {
+	/*if (IsBoxing) {
 		if ( (Doing>=DO_PUNCH_HIT1 && Doing<=DO_KICK_DEATH) || (Doing == DO_ON_GUARD) ) return FIRE_BUSY;
 		if (Arm) return(FIRE_BUSY);	// don't let fire if still re-arming
-	}
+	}*/
 #endif
 
 	/*
@@ -3302,6 +3301,8 @@ int InfantryClass::Mission_Attack(void)
 	}
 	return(FootClass::Mission_Attack());
 }
+
+
 
 
 RTTIType InfantryClass::What_Am_I(void) const
