@@ -18,6 +18,7 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 -Unlock Helicarrier & Phase Tank by CCHyper [ADDED via ini files, optimally want to enable in DLL somehow]  
 -One-cell gap for base construction (TD) by FluffyQuack [ADDED to DLL]  
 -Modern Wall Building (TD & RA) by pchote [ADDED to DLL]  
+-Boxing (TD) by JeepRubi [ADDED to DLL]  
 
 ### To-Be-Added
 -Smarter harvesting (TD & RA) -- This one might be handled by EA  
