@@ -428,7 +428,7 @@ void UnitClass::AI(void)
 	**	the heal logic here.
 	*/
 	//Rafael: Harvester should also heal itself like in later games
-	if ((*this == UNIT_HTANK || *this == UNIT_HARVESTER) && (Frame % 16) == 0 && Health_Ratio() < 0x0080) {
+	if ((*this == UNIT_HTANK || *this == UNIT_HARVESTER && PlayerPtr->Difficulty == DIFF_EASY) && (Frame % 16) == 0 && Health_Ratio() < 0x0080) {
 		Strength++;
 		Mark(MARK_CHANGE);
 	}
