@@ -947,10 +947,8 @@ void MapClass::Logic(void)
 			(ptr->Land_Type() == LAND_TIBERIUM && ptr->OverlayData > 6) ||
 			(terrain && terrain->Class->IsTiberiumSpawn)) {
 
-			//int tries = 1;
-			int tries = 2; //Try some more - Jeod
-			//if (terrain) tries = 3;
-			if (terrain) tries = 4; //Try some more - Jeod
+			int tries = 1;
+			if (terrain) tries = 3;
 			for (int i = 0; i < tries; i++) {
 				if (TiberiumSpreadCount < sizeof(TiberiumSpread)/sizeof(TiberiumSpread[0])) {
 					TiberiumSpread[TiberiumSpreadCount++] = cell;
@@ -965,8 +963,8 @@ void MapClass::Logic(void)
 	TiberiumScan = index;
 
 	if (TiberiumScan >= MAP_CELL_TOTAL) {
-		int tries = 2; //Try some more - Jeod
-		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 4; //Try some more - Jeod
+		int tries = 1;
+		if (Special.IsTFast || GameToPlay != GAME_NORMAL) tries = 2;
 		TiberiumScan = 0;
 		IsForwardScan = (IsForwardScan == false);
 
