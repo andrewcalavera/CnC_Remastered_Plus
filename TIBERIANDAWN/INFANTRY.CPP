@@ -501,12 +501,12 @@ ResultType InfantryClass::Take_Damage(int & damage, int distance, WarheadType wa
 
 			case WARHEAD_FIST:
 				Sound_Effect(sound, Coord);
-				Do_Action(DO_PUNCH_DEATH,true);
+				Do_Action(DO_GUN_DEATH,true); //Change from unused DO_PUNCH_DEATH - Jeod
 				break;
 
 			case WARHEAD_FOOT:
 				Sound_Effect(sound, Coord);
-				Do_Action(DO_KICK_DEATH,true);
+				Do_Action(DO_GUN_DEATH,true); //Change from unused DO_KICK_DEATH - Jeod
 				break;
 		}
 
@@ -530,11 +530,13 @@ ResultType InfantryClass::Take_Damage(int & damage, int distance, WarheadType wa
 				case WARHEAD_FIST:
 					if (damage == Infantry_Punch_Damage[1]) addval++;
 					Do_Action( (DoType) ( (int)DO_PUNCH_HIT1 + addval),true);
+					Sound_Effect(VOC_TOSS, Coord); //Add sound effect for Boxing - Jeod
 					break;
 
 				case WARHEAD_FOOT:
 					if (damage == Infantry_Kick_Damage[1]) addval++;
 					Do_Action( (DoType) ( (int)DO_KICK_HIT1 + addval),true);
+					Sound_Effect(VOC_TOSS, Coord); //Add sound effect for Boxing - Jeod
 					break;
 			}
 		} else {
