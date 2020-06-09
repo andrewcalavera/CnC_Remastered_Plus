@@ -19,10 +19,10 @@ This mod's goal is to provide an all-inclusive experience via most popular exist
 -One-cell gap for base construction (TD) by FluffyQuack [ADDED to DLL]  
 -Modern Wall Building (TD & RA) by pchote [ADDED to DLL]  
 -Boxing (TD) by JeepRubi and modified by Jeod [ADDED to DLL]  
+-Balanced difficulties (TD) by axeil55 [ADDED via XML file and DLL changes]  
 
 ### To-Be-Added
--Smarter harvesting (TD & RA) -- This one might be handled by EA  
--Balanced difficulties (TD & RA)  
+-Smarter harvesting (TD & RA) -- This one might be handled by EA   
 
 ## Differences from CFE Patch
 CFE Patch (by cfehunter) features some extra modernizations that, in my opinion, sort of break the "feel" of the remaster (making it more of a remake). Features such as Rally Points, Repair With No Cash, and A-Star Pathfinding will not be merged into this mod.
