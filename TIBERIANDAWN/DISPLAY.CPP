@@ -917,6 +917,11 @@ bool DisplayClass::Passes_Proximity_Check(ObjectTypeClass const *object)
 			//[One-Cell Gap] FluffyQuack: Repeat the above loop so we check one cell further away
 			for (FacingType newfacing = FACING_N; newfacing < FACING_COUNT; newfacing++) {
 				CELL	newercell = Adjacent_Cell(newcell, newfacing);
+
+				// Out of bounds check
+				if (newercell < 0 || newercell >= MAP_CELL_TOTAL)
+					continue;
+
 				if (!In_Radar(newercell)) return(false);
 				base = (*this)[newercell].Cell_Techno();
 				if ((*this)[newercell].Owner == house) {

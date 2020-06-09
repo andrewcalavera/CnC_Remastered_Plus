@@ -1697,6 +1697,7 @@ extern "C" __declspec(dllexport) bool __cdecl CNC_Save_Load(bool save, const cha
 		result = Load_Game(file_path_and_name);
 		
 		DLLExportClass::Set_Player_Context(DLLExportClass::GlyphxPlayerIDs[0], true);
+		DLLExportClass::Recalculate_Placement_Distances(); //FluffyQuack: This makes the 1-gap building mod work with savegames created without the mod running
 		Set_Logic_Page(SeenBuff);
 		VisiblePage.Clear();
 		Map.Flag_To_Redraw(true);
