@@ -1013,7 +1013,7 @@ void HouseClass::AI(void)
 			AlertTime = (TICKS_PER_MINUTE * Random_Pick(4, 10));
 		} else {
 			if (GameToPlay == GAME_NORMAL && PlayerPtr->Difficulty == DIFF_EASY) {
-				AlertTime = (TICKS_PER_MINUTE * Random_Pick(6, 30));
+				AlertTime = (TICKS_PER_MINUTE * Random_Pick(6, 30)); //Adjust alert values so Easy isn't *too* Easy - Jeod
 			} else {
 				AlertTime = (TICKS_PER_MINUTE * Random_Pick(5, 20));
 			}
@@ -3640,6 +3640,7 @@ TechnoTypeClass const * HouseClass::Suggest_New_Object(RTTIType objecttype) cons
 				**	A computer controlled house will try to build a replacement
 				**	harvester if possible.
 				*/
+				//Enable this on Easy difficulty - Jeod
 				if (!(GameToPlay == GAME_NORMAL /*&& PlayerPtr->Difficulty == DIFF_EASY*/) && !IsHuman && (ActiveBScan & STRUCTF_REFINERY) && !(UScan & UNITF_HARVESTER)) {
 					techno = &UnitTypeClass::As_Reference(UNIT_HARVESTER);
 					if (techno->Scenario <= BuildLevel) break;
