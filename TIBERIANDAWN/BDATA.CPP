@@ -54,7 +54,6 @@
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 #include	"function.h"
-
 #define	MCW	MAP_CELL_W
 
 #define XYCELL(x,y)	(y*MAP_CELL_W+x)
@@ -162,7 +161,6 @@ static short const OComList[] = {1, REFRESH_EOL};
 static short const OList12[] = {0, REFRESH_EOL};
 static short const OListHand[] = {0, 1, MCW*2, MCW*1, REFRESH_EOL};
 static short const OListTmpl[] = {0, 1, 2, REFRESH_EOL};
-
 
 /***************************************************************************
 */
@@ -668,7 +666,7 @@ static BuildingTypeClass const ClassRefinery(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	2000,										// CAPACITY:	Spice storage capacity.
+	1500,										// CAPACITY:	Spice storage capacity.
 	10,										// POWER:		Power points required.
 	40,										// DRAIN:		Power points required.
 	BSIZE_33, 								// SIZE:			Building size.
@@ -725,7 +723,7 @@ static BuildingTypeClass const ClassStorage(
 	WEAPON_NONE,WEAPON_NONE,
 	ARMOR_WOOD,								// ARMOR:		Armor type
 	0,											// CANENTER:	Units that can enter building.
-	2500,										// CAPACITY:	Spice storage capacity.
+	2000,										// CAPACITY:	Spice storage capacity.
 	0,											// POWER:		Power points required.
 	10,										// DRAIN:		Power points required.
 	BSIZE_21, 								// SIZE:			Building size.
